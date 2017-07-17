@@ -1,0 +1,19 @@
+.about__container {
+  width: 60%;
+  margin: 0 20%;
+  padding: $medium-gap 0;
+  border-bottom: 3px solid $color-light-grey;
+}
+
+.about {
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-dark-grey;
+  }
+  &__content {
+    font-family: $secondary-font;
+    font-size: 1.2rem;
+  }
+}

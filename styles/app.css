@@ -1,0 +1,231 @@
+.about__container {
+  width: 60%;
+  margin: 0 20%;
+  padding: 5rem 0;
+  border-bottom: 3px solid #efefef; }
+
+.about__heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #989898; }
+.about__content {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem; }
+
+.athlete__background {
+  display: none;
+  position: absolute;
+  height: 100%;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .athlete__background--show {
+    display: block; }
+
+.athlete__container {
+  width: 70%;
+  padding: 3rem 5rem;
+  box-sizing: border-box;
+  margin: 5rem 15%;
+  background-color: #fff;
+  opacity: 1; }
+
+.athlete__video__container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin: 10% 0; }
+.athlete__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+.athlete__info {
+  width: 25%; }
+.athlete__name {
+  text-align: left;
+  color: #989898;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4rem;
+  width: 50%;
+  margin-top: 0; }
+.athlete__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 3rem; }
+.athlete__image {
+  width: 40%; }
+.athlete__fund-link {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  margin: 3rem;
+  color: #fff;
+  background: #76AEED;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem; }
+  .athlete__fund-link:hover {
+    color: #efefef; }
+.athlete__bio {
+  margin: 3rem 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem; }
+.athlete__table-container {
+  width: 80%; }
+.athlete__table {
+  width: 100%;
+  border: 3px solid #efefef; }
+
+.athlete-table__item {
+  width: 50%;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 3px solid #efefef; }
+.athlete-table__heading {
+  width: 50%;
+  background-color: #fff;
+  color: #76AEED;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding: 1.5rem 0; }
+
+.athletes__container {
+  width: 60%;
+  margin: 0 20%;
+  padding: 5rem 0;
+  border-bottom: 3px solid #efefef; }
+
+.athletes {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0; }
+  .athletes__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #989898; }
+  .athletes__fund-link {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 3rem 0;
+    color: #fff;
+    font-weight: 600;
+    background-color: #76AEED;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem; }
+    .athletes__fund-link:hover {
+      color: #efefef; }
+  .athletes__video__container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+  .athletes__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .athletes__info {
+    width: 23%; }
+  .athletes__name {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #989898;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem; }
+  .athletes__image {
+    width: 100%; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 300;
+  word-spacing: 0.35rem; }
+
+h1, h2, h3 {
+  font-weight: 300; }
+
+h1 {
+  font-size: 2.4rem; }
+
+section {
+  margin: 50rem 0; }
+
+.main__container--frozen {
+  position: fixed;
+  overflow-y: none; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 4.2rem;
+  border-bottom: 3px solid #efefef; }
+  .nav-left {
+    width: 20%;
+    color: #76AEED; }
+  .nav-right {
+    width: 80%;
+    font-size: 1.2rem; }
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none; }
+  .nav__item {
+    margin: 0 5%; }
+  .nav__link {
+    text-decoration: none;
+    color: #76AEED; }
+  .nav--frozen {
+    z-index: 0; }
+
+.sponsors__container {
+  width: 60%;
+  margin: 5rem 20%; }
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .sponsors__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #989898; }
+
+.sponsor {
+  width: 17%; }
+  .sponsor__logo {
+    width: 100%; }
+  .sponsor__comment {
+    width: 100%;
+    font-family: "Cormorant Garamond", serif;
+    word-spacing: 0.4rem;
+    font-size: 1rem; }
+
+/*# sourceMappingURL=app.css.map */

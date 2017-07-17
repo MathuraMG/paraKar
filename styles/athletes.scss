@@ -1,0 +1,62 @@
+.athletes__container {
+  width: 60%;
+  margin: 0 20%;
+  padding: $medium-gap 0;
+  border-bottom: 3px solid $color-light-grey;
+}
+
+.athletes {
+  display: flex;
+  justify-content: space-between;
+  margin: $small-gap 0;
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-dark-grey;
+  }
+  &__fund-link {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 3rem 0;
+    color: $color-white;
+    font-weight: 600;
+    background-color: $color-light-blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    &:hover {
+      color: $color-light-grey;
+    }
+  }
+  &__video__container {
+    position: relative;
+  	padding-bottom: 56.25%;
+  	padding-top: 30px;
+  	height: 0;
+  	overflow: hidden;
+  }
+  &__video {
+    position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  }
+  &__info {
+    width: 23%;
+  }
+
+  &__name {
+    font-size: $font-size-heading;
+    text-align: center;
+    color: $color-dark-grey;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  &__image {
+    width: 100%;
+  }
+}

@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: $font-size-heading*3.5;
+  border-bottom: 3px solid $color-light-grey;
+  &-left {
+    width: 20%;
+    color: $color-light-blue;
+  }
+  &-right {
+    width: 80%;
+    font-size: $font-size-heading;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  &__item {
+    margin: 0 5%;
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-light-blue;
+  }
+  &--frozen {
+    z-index: 0;
+  }
+}

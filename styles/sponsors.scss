@@ -1,0 +1,30 @@
+.sponsors__container {
+  width: 60%;
+  margin: $medium-gap 20%;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  &__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $color-dark-grey;
+  }
+}
+
+.sponsor {
+  width: 17%;
+  &__logo {
+    width: 100%;
+  }
+  &__comment {
+    width: 100%;
+    font-family: $secondary-font;
+    word-spacing: 0.4rem;
+    font-size: 1rem;
+  }
+}
