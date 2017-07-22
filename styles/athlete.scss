@@ -13,26 +13,25 @@
 }
 
 .athlete__container {
-  // display: flex;
-  // overflow-y: scroll;
   width: 70%;
-  padding: $small-gap $medium-gap;
+  padding: $small-gap 10%;
   box-sizing: border-box;
   margin: $medium-gap 15%;
   background-color: $color-white;
   opacity: 1;
 }
 .athlete {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
+  &__exit {
+    text-align: right;
+    font-size: $font-size-heading;
+  }
   &__video__container {
     position: relative;
   	padding-bottom: 56.25%;
   	padding-top: 30px;
   	height: 0;
   	overflow: hidden;
-    margin: 10% 0;
+    margin: 15% 0;
   }
   &__video {
     position: absolute;
@@ -64,15 +63,15 @@
     width: 40%;
   }
   &__fund-link {
-    width: 100%;
-    box-sizing: border-box;
-    padding: $small-gap/2;
-    margin: $small-gap;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    margin: 3rem 0;
     color: $color-white;
-    background: $color-light-blue;
+    font-weight: 600;
+    background-color: $color-light-blue;
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
     font-size: 1.5rem;
     &:hover {
       color: $color-light-grey;
@@ -84,7 +83,8 @@
     font-size: 1.2rem;
   }
   &__table-container {
-    width: 80%;
+    width: 100%;
+    margin:3rem auto;
   }
   &__table {
     width: 100%;
