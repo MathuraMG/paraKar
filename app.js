@@ -1,5 +1,8 @@
-function showAthlete() {
-  console.log("testinginginging");
+function showAthlete(obj) {
+  var id = obj.getAttribute('data-id');
+  var athleteId = "#athlete-" + id;
+  $(".athlete").hide();
+  $(athleteId).show();
   $(".athlete__background").addClass("athlete__background--show");
   $(".main__container").addClass("main__container--frozen");
   $(".nav").addClass("nav--frozen");
@@ -21,4 +24,5 @@ $( document ).ready(function() {
   $( ".athlete__container" ).click(function(e) {
     e.stopPropagation();
   });
-});
+});`
+`

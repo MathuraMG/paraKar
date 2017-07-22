@@ -204,6 +204,12 @@ section {
   .nav__link {
     text-decoration: none;
     color: #76AEED; }
+  .nav__home-link {
+    text-decoration: none;
+    color: #76AEED;
+    margin: 0 5%;
+    font-size: 1.2rem;
+    line-height: 4.2rem; }
   .nav--frozen {
     z-index: 0; }
 

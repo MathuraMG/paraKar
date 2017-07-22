@@ -29,6 +29,13 @@
     text-decoration: none;
     color: $color-light-blue;
   }
+  &__home-link {
+    text-decoration: none;
+    color: $color-light-blue;
+    margin: 0 5%;
+    font-size: $font-size-heading;
+    line-height: $font-size-heading*3.5;
+  }
   &--frozen {
     z-index: 0;
   }
