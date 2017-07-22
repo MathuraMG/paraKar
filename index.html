@@ -19,7 +19,9 @@
 <body>
   <nav class="nav">
     <div class="nav-left">
-      PARKAR
+      <a class="nav__home-link" href="#athletes">
+        PARAKAR
+      </a>
     </div>
     <div class="nav-right">
       <ul class="nav__list">
@@ -48,19 +50,19 @@
       </h1>
       <div class="athletes athletes__row">
         <div class="athletes__info">
-          <a class="athletes__link" onclick="showAthlete()">
+          <a class="athletes__link" data-id="0" onclick="showAthlete(this)">
             <img src="assets/cat1.jpg" class="athletes__image" />
             <h2 class="athletes__name"> Arvind Ramasamy </h2>
           </a>
         </div>
         <div class="athletes__info">
-          <a class="athletes__link" target="_blank">
+          <a class="athletes__link" data-id="1" onclick="showAthlete(this)">
             <img src="assets/cat2.jpg" class="athletes__image" />
             <h2 class="athletes__name"> Vivek Raghavan </h2>
           </a>
         </div>
         <div class="athletes__info">
-          <a class="athletes__link" target="_blank">
+          <a class="athletes__link" data-id="2" onclick="showAthlete(this)">
             <img src="assets/cat3.jpg" class="athletes__image" />
             <h2 class="athletes__name"> Ajay Rathore </h2>
           </a>
@@ -68,19 +70,19 @@
       </div>
       <div class="athletes athletes__row">
         <div class="athletes__info">
-          <a class="athletes__link" target="_blank">
+          <a class="athletes__link" data-id="3" onclick="showAthlete(this)">
             <img src="assets/cat1.jpg" class="athletes__image" />
             <h2 class="athletes__name"> Vikram Patil </h2>
           </a>
         </div>
         <div class="athletes__info">
-          <a class="athletes__link" target="_blank">
+          <a class="athletes__link" data-id="4" onclick="showAthlete(this)">
             <img src="assets/cat2.jpg" class="athletes__image" />
             <h2 class="athletes__name"> Puttaswamayya Muthuraju </h2>
           </a>
         </div>
         <div class="athletes__info">
-          <a class="athletes__link" target="_blank">
+          <a class="athletes__link" data-id="5" onclick="showAthlete(this)">
             <img src="assets/cat3.jpg" class="athletes__image" />
             <h2 class="athletes__name"> Shivaji Rao Gaekwad </h2>
           </a>
@@ -173,24 +175,225 @@
   </div>
   <section class="athlete__background">
     <div class="athlete__container">
-      <div class="athlete">
+
+      <div class="athlete" id="athlete-0">
+        <nav class="athlete__exit" onclick="hideAthlete()"> X </nav>
         <div class="athlete__main">
           <h1 class="athlete__name">
-          FirstName MiddleName LastName
-        </h1>
+             Arvind Ramasamy
+          </h1>
           <img class="athlete__image" src="../assets/cat1.jpg" />
-
         </div>
         <a class="athlete__fund-link" href="https://www.gofundme.com/raise-funds/cats" target="_blank">
-        Click here to Fund us
-      </a>
+          Click here to Fund us
+        </a>
         <p class="athlete__bio">
           Munchkin malkin. Jaguar malkin yet bengal yet havana brown and sphynx. Ocicat mouser for abyssinian panther malkin yet donskoy panther. American shorthair kitten manx, tiger so ocelot. Havana brown. Kitty leopard so norwegian forest or kitty or sphynx
           so burmese.
         </p>
-        <!-- <div class="athletes__video__container">
-        <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
-      </div> -->
+        <div class="athletes__video__container">
+          <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="athlete__table-container">
+          <table class="athlete__table">
+            <tr class="athlete-table__row">
+              <th class="athlete-table__heading"> Requirement </th>
+              <th class="athlete-table__heading"> Cost </th>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Cat Food </td>
+              <td class="athlete-table__item"> 3000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Toys </td>
+              <td class="athlete-table__item"> 1000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> ImNotSure </td>
+              <td class="athlete-table__item"> 500 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="athlete" id="athlete-1">
+        <nav class="athlete__exit" onclick="hideAthlete()"> X </nav>
+        <div class="athlete__main">
+          <h1 class="athlete__name">
+            Vivek Raghavan
+          </h1>
+          <img class="athlete__image" src="../assets/cat2.jpg" />
+        </div>
+        <a class="athlete__fund-link" href="https://www.gofundme.com/raise-funds/cats" target="_blank">
+          Click here to Fund us
+        </a>
+        <p class="athlete__bio">
+          Munchkin malkin. Jaguar malkin yet bengal yet havana brown and sphynx. Ocicat mouser for abyssinian panther malkin yet donskoy panther. American shorthair kitten manx, tiger so ocelot. Havana brown. Kitty leopard so norwegian forest or kitty or sphynx
+          so burmese.
+        </p>
+        <div class="athletes__video__container">
+          <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="athlete__table-container">
+          <table class="athlete__table">
+            <tr class="athlete-table__row">
+              <th class="athlete-table__heading"> Requirement </th>
+              <th class="athlete-table__heading"> Cost </th>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Cat Food </td>
+              <td class="athlete-table__item"> 3000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Toys </td>
+              <td class="athlete-table__item"> 1000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> ImNotSure </td>
+              <td class="athlete-table__item"> 500 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="athlete" id="athlete-2">
+        <nav class="athlete__exit" onclick="hideAthlete()"> X </nav>
+        <div class="athlete__main">
+          <h1 class="athlete__name">
+            Ajay Rathore
+          </h1>
+          <img class="athlete__image" src="../assets/cat3.jpg" />
+        </div>
+        <a class="athlete__fund-link" href="https://www.gofundme.com/raise-funds/cats" target="_blank">
+          Click here to Fund us
+        </a>
+        <p class="athlete__bio">
+          Munchkin malkin. Jaguar malkin yet bengal yet havana brown and sphynx. Ocicat mouser for abyssinian panther malkin yet donskoy panther. American shorthair kitten manx, tiger so ocelot. Havana brown. Kitty leopard so norwegian forest or kitty or sphynx
+          so burmese.
+        </p>
+        <div class="athletes__video__container">
+          <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="athlete__table-container">
+          <table class="athlete__table">
+            <tr class="athlete-table__row">
+              <th class="athlete-table__heading"> Requirement </th>
+              <th class="athlete-table__heading"> Cost </th>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Cat Food </td>
+              <td class="athlete-table__item"> 3000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Toys </td>
+              <td class="athlete-table__item"> 1000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> ImNotSure </td>
+              <td class="athlete-table__item"> 500 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="athlete" id="athlete-3">
+        <nav class="athlete__exit" onclick="hideAthlete()"> X </nav>
+        <div class="athlete__main">
+          <h1 class="athlete__name">
+             Vikram Patil
+          </h1>
+          <img class="athlete__image" src="../assets/cat1.jpg" />
+        </div>
+        <a class="athlete__fund-link" href="https://www.gofundme.com/raise-funds/cats" target="_blank">
+          Click here to Fund us
+        </a>
+        <p class="athlete__bio">
+          Munchkin malkin. Jaguar malkin yet bengal yet havana brown and sphynx. Ocicat mouser for abyssinian panther malkin yet donskoy panther. American shorthair kitten manx, tiger so ocelot. Havana brown. Kitty leopard so norwegian forest or kitty or sphynx
+          so burmese.
+        </p>
+        <div class="athletes__video__container">
+          <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="athlete__table-container">
+          <table class="athlete__table">
+            <tr class="athlete-table__row">
+              <th class="athlete-table__heading"> Requirement </th>
+              <th class="athlete-table__heading"> Cost </th>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Cat Food </td>
+              <td class="athlete-table__item"> 3000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Toys </td>
+              <td class="athlete-table__item"> 1000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> ImNotSure </td>
+              <td class="athlete-table__item"> 500 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="athlete" id="athlete-4">
+        <nav class="athlete__exit" onclick="hideAthlete()"> X </nav>
+        <div class="athlete__main">
+          <h1 class="athlete__name">
+            Puttaswamayya Muthuraju
+          </h1>
+          <img class="athlete__image" src="../assets/cat2.jpg" />
+        </div>
+        <a class="athlete__fund-link" href="https://www.gofundme.com/raise-funds/cats" target="_blank">
+          Click here to Fund us
+        </a>
+        <p class="athlete__bio">
+          Munchkin malkin. Jaguar malkin yet bengal yet havana brown and sphynx. Ocicat mouser for abyssinian panther malkin yet donskoy panther. American shorthair kitten manx, tiger so ocelot. Havana brown. Kitty leopard so norwegian forest or kitty or sphynx
+          so burmese.
+        </p>
+        <div class="athletes__video__container">
+          <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="athlete__table-container">
+          <table class="athlete__table">
+            <tr class="athlete-table__row">
+              <th class="athlete-table__heading"> Requirement </th>
+              <th class="athlete-table__heading"> Cost </th>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Cat Food </td>
+              <td class="athlete-table__item"> 3000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> Toys </td>
+              <td class="athlete-table__item"> 1000 </td>
+            </tr>
+            <tr class="athlete-table__row">
+              <td class="athlete-table__item"> ImNotSure </td>
+              <td class="athlete-table__item"> 500 </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="athlete" id="athlete-5">
+        <nav class="athlete__exit" onclick="hideAthlete()"> X </nav>
+        <div class="athlete__main">
+          <h1 class="athlete__name">
+            Shivaji Rap Gaekwad
+          </h1>
+          <img class="athlete__image" src="../assets/cat3.jpg" />
+        </div>
+        <a class="athlete__fund-link" href="https://www.gofundme.com/raise-funds/cats" target="_blank">
+          Click here to Fund us
+        </a>
+        <p class="athlete__bio">
+          Munchkin malkin. Jaguar malkin yet bengal yet havana brown and sphynx. Ocicat mouser for abyssinian panther malkin yet donskoy panther. American shorthair kitten manx, tiger so ocelot. Havana brown. Kitty leopard so norwegian forest or kitty or sphynx
+          so burmese.
+        </p>
+        <div class="athletes__video__container">
+          <iframe class="athletes__video" width="560" height="315" src="https://www.youtube.com/embed/RN36RzSjWNw" frameborder="0" allowfullscreen></iframe>
+        </div>
         <div class="athlete__table-container">
           <table class="athlete__table">
             <tr class="athlete-table__row">
